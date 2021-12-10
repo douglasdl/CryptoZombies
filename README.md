@@ -20,5 +20,5 @@ contract MyContract {
 
 
 ## Memory Types
-- storage (armazenamento).
-- memory (memória).
+- storage (armazenamento): Blockchain (HD).
+- memory (memória): Function execution (RAM).
