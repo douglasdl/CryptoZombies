@@ -22,3 +22,12 @@ contract MyContract {
 ## Memory Types
 - storage (armazenamento): Blockchain (HD).
 - memory (memória): Function execution (RAM).
+
+## Functions
+
+- public
+- private
+- pure
+- view
+- internal
+- external
