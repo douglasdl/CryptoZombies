@@ -1,3 +1,5 @@
+pragma solidity ^0.4.19;
+
 import "./zombiehelper.sol";
 
 contract ZombieBattle is ZombieHelper {
@@ -13,5 +15,15 @@ contract ZombieBattle is ZombieHelper {
     Zombie storage myZombie = zombies[_zombieId];
     Zombie storage enemyZombie = zombies[_targetId];
     uint rand = randMod(100);
+    if (rand <= attackVictoryProbability) {
+      myZombie.winCount++;
+      myZombie.level++;
+      enemyZombie.lossCount++;
+      feedAndMultiply(_zombieId, enemyZombie.dna, "zombie");
+    } else {
+      myZombie.lossCount++;
+      enemyZombie.winCount++;
+      _triggerCooldown(myZombie);
+    }
   }
 }
