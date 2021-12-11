@@ -24,14 +24,33 @@ contract MyContract {
 - memory (memória): Function execution (RAM).
 
 ## Functions
+```solidity
+function name() {
 
+}
+
+### Visibility Modifiers
 - public
 - private
-- pure
-- view
 - internal
 - external
 
+### Status Modifiers
+- pure
+- view
+
+## Modifier Functions
+```solidity
+modifier name() {
+  require();
+  _;
+}
+
+## Payable Functions
+```solidity
+function name() external payable {
+
+}
 
 ## Smart Contracts Libraries
 
