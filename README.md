@@ -28,6 +28,7 @@ contract MyContract {
 function name() {
 
 }
+```
 
 ### Visibility Modifiers
 - public
@@ -45,12 +46,30 @@ modifier name() {
   require();
   _;
 }
+```
 
 ## Payable Functions
 ```solidity
 function name() external payable {
 
 }
+```
+
+## Install Web3.js
+Using NPM
+```sh
+npm install web3
+```
+
+Using Yarn
+```sh
+yarn add web3
+```
+
+Using Bower
+```sh
+bower install web3
+```
 
 ## Smart Contracts Libraries
 
